@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+img {
+
+  width: 100%;
+  
+}
+
+.star_row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.star_row::before,
+.star_row::after {
+  display: table;
+  content: '';
+}
+
+.star_row::after {
+  clear: both;
+}
+
+.col-4 {
+  float: left;
+
+  width: 100%;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+
+@media only screen and (min-width: 640px) {
+  
+  .col-4 {
+    width: 33.3%;
+  }
+
+}
+
+
